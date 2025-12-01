@@ -75,6 +75,11 @@ const data = {
       icon: IconLayout,
     },
     {
+      title: "Workflow",
+      url: "/workflow",
+      icon: IconListDetails,
+    },
+    {
       title: "Showroom",
       url: "/showroom",
       icon: IconBuildingStore,

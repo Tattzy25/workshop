@@ -81,13 +81,33 @@ export function SiteHeader() {
               <span>Dashboard</span>
               <CommandShortcut>⌘D</CommandShortcut>
             </CommandItem>
-            <CommandItem onSelect={() => { window.location.href = '/showroom'; setOpen(false) }}>
-              <IconFile className="size-4" />
-              <span>Showroom</span>
-            </CommandItem>
             <CommandItem onSelect={() => { window.location.href = '/workshop'; setOpen(false) }}>
               <IconFile className="size-4" />
               <span>Workshop</span>
+            </CommandItem>
+            <CommandItem onSelect={() => { window.location.href = '/testshop'; setOpen(false) }}>
+              <IconFile className="size-4" />
+              <span>Testshop</span>
+            </CommandItem>
+            <CommandItem onSelect={() => { window.location.href = '/embedded'; setOpen(false) }}>
+              <IconFile className="size-4" />
+              <span>Embedded</span>
+            </CommandItem>
+            <CommandItem onSelect={() => { window.location.href = '/metadata'; setOpen(false) }}>
+              <IconFile className="size-4" />
+              <span>Metadata</span>
+            </CommandItem>
+            <CommandItem onSelect={() => { window.location.href = '/indexed'; setOpen(false) }}>
+              <IconFile className="size-4" />
+              <span>Indexed</span>
+            </CommandItem>
+            <CommandItem onSelect={() => { window.location.href = '/workflow'; setOpen(false) }}>
+              <IconFile className="size-4" />
+              <span>Workflow</span>
+            </CommandItem>
+            <CommandItem onSelect={() => { window.location.href = '/showroom'; setOpen(false) }}>
+              <IconFile className="size-4" />
+              <span>Showroom</span>
             </CommandItem>
           </CommandGroup>
           <CommandSeparator />
