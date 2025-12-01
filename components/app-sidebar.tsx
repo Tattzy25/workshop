@@ -17,6 +17,10 @@ import {
   IconSearch,
   IconSettings,
   IconUsers,
+  IconCode,
+  IconTags,
+  IconBuildingStore,
+  IconLayout,
 } from "@tabler/icons-react"
 
 import { NavDocuments } from "@/components/nav-documents"
@@ -54,6 +58,26 @@ const data = {
       title: "Testshop",
       url: "/testshop",
       icon: IconChartBar,
+    },
+    {
+      title: "Embedded",
+      url: "/embedded",
+      icon: IconCode,
+    },
+    {
+      title: "Metadata",
+      url: "/metadata",
+      icon: IconTags,
+    },
+    {
+      title: "Indexed",
+      url: "/indexed",
+      icon: IconLayout,
+    },
+    {
+      title: "Showroom",
+      url: "/showroom",
+      icon: IconBuildingStore,
     },
   ],
   navClouds: [

@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { ModeToggle } from "@/components/mode-toggle"
+import { InputGroup, InputGroupInput, InputGroupAddon } from "@/components/ui/input-group"
+import { IconSearch } from "@tabler/icons-react"
 
 export function SiteHeader() {
   return (
@@ -14,6 +16,14 @@ export function SiteHeader() {
           className="mx-2 data-[orientation=vertical]:h-4"
         />
         <h1 className="text-base font-medium">Documents</h1>
+        <div className="mx-auto flex max-w-md flex-1 items-center justify-center py-[3px]">
+          <InputGroup className="min-h-[35px]">
+            <InputGroupAddon align="inline-start">
+              <IconSearch className="size-4" />
+            </InputGroupAddon>
+            <InputGroupInput placeholder="Search..." />
+          </InputGroup>
+        </div>
         <div className="ml-auto flex items-center gap-2">
           <ModeToggle />
         </div>
