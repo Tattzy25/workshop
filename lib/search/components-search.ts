@@ -22,7 +22,7 @@ export type ComponentMetadata = {
 const client = new Search(UPSTASH_CONFIG);
 
 // Create or access the components index
-const componentIndex = client.index<ComponentContent, ComponentMetadata>("components");
+export const componentIndex = client.index<ComponentContent, ComponentMetadata>("components");
 
 // Upsert components into the index
 export async function upsertComponents(
